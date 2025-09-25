@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique de Noël</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="logo">🎄 La Boutique de Noël</div>
+    <nav class="nav">
+        <a href="#produits">Produits</a>
+        <a href="#promo">Promotions</a>
+        <a href="#contact">Contact</a>
+        <a href="#panier">🛒 Panier</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Des fêtes magiques commencent ici ✨</h1>
+        <p>Découvrez nos décorations, cadeaux et douceurs de Noël</p>
+        <a href="#produits" class="btn">Voir nos produits</a>
+    </div>
+</section>
+
+<!-- Produits -->
+<section id="produits" class="produits">
+    <h2>Nos Meilleurs Produits</h2>
+    <div class="grid">
+        <div class="produit">
+            <img src="images/sapin.jpg" alt="Sapin de Noël">
+            <h3>Sapin enchanté</h3>
+            <p>49,99 €</p>
+            <button onclick="ajouterAuPanier('Sapin enchanté', 49.99)">Ajouter</button>
+        </div>
+        <div class="produit">
+            <img src="images/cadeau.jpg" alt="Coffret cadeau">
+            <h3>Coffret cadeaux</h3>
+            <p>29,99 €</p>
+            <button onclick="ajouterAuPanier('Coffret cadeaux', 29.99)">Ajouter</button>
+        </div>
+        <div class="produit">
+            <img src="images/chocolat.jpg" alt="Chocolats de Noël">
+            <h3>Chocolats artisanaux</h3>
+            <p>14,99 €</p>
+            <button onclick="ajouterAuPanier('Chocolats artisanaux', 14.99)">Ajouter</button>
+        </div>
+    </div>
+</section>
+
+<!-- Promo -->
+<section id="promo" class="promo">
+    <h2>🎁 Offre Spéciale de Noël 🎁</h2>
+    <p>-20% sur toute la boutique jusqu’au 24 décembre</p>
+    <a href="#produits" class="btn">Profitez-en</a>
+</section>
+
+<!-- Panier -->
+<section id="panier" class="panier">
+    <h2>Votre Panier</h2>
+    <ul id="liste-panier"></ul>
+    <p>Total : <span id="total">0.00</span> €</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 La Boutique de Noël - Tous droits réservés 🎅</p>
+</footer>
+</body>
+</html>
